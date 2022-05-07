@@ -32,7 +32,7 @@ class Usuario {
 			booksName.push(libro.nombre);
 		}
 
-		return booksName.join(", ");
+		return booksName;
 	}
 }
 
@@ -45,4 +45,4 @@ console.log(`El usuario tiene ${usuario.countMascotas()} mascota.`);
 
 usuario.addBook("Harry Potter: La piedra filosofal", "JK Rowling");
 usuario.addBook("Harry Potter: El caliz de fuego", "JK Rowling");
-console.log(`Los libros del usuario son ${usuario.getBooksName()}.`);
+console.log(usuario.getBooksName());
