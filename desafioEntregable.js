@@ -25,14 +25,9 @@ class Usuario {
 	}
 
 	getBooksName() {
-		let libros = this.libros;
-		let booksName = [];
-
-		for (const libro of libros) {
-			booksName.push(libro.nombre);
-		}
-
-		return booksName;
+		return this.libros.map((libro) => {
+			return libro.nombre;
+		});
 	}
 }
 
