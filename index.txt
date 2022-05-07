@@ -1,0 +1,8 @@
+Link a las clases: https://drive.google.com/drive/u/0/folders/1wClXtk2qmlQPOSyQCO3w-Vf8QxpZoSoX
+
+Investigar sobre Nodemon: https://www.npmjs.com/package/nodemon     
+    
+    instalador:
+        npm i nodemon -g       // Instala de forma global.
+                            
+
