@@ -10,8 +10,9 @@ class Usuario {
 		return `${this.nombre} ${this.apellido}`;
 	}
 
-	addMascota(mascota) {
-		this.mascotas.push(mascota);
+	addMascota(nombre, edad, ...arg) {
+		//this.mascotas.push(arg);
+		console.log(arg);
 	}
 
 	countMascotas() {
@@ -35,7 +36,7 @@ let usuario = new Usuario("Diego", "Garcia");
 
 console.log(`El nombre de usuario es ${usuario.getFullName()}.`);
 
-usuario.addMascota("Perro");
+usuario.addMascota("Perro", "Gato", "Loro", "Tigre");
 console.log(`El usuario tiene ${usuario.countMascotas()} mascota.`);
 
 usuario.addBook("Harry Potter: La piedra filosofal", "JK Rowling");
